@@ -49,15 +49,17 @@ class ListRemind extends Component {
   //Create Reminder
   setListReminder() {
     let reminderListArray = [];
+    let reminderListArrayShow = [];
     if (localStorage.reminderListArray !== undefined && localStorage.reminderListArray !== "") {
       reminderListArray = JSON.parse(localStorage.reminderListArray);
     }
-    if (this.state.filter !== "all") {
+    if (this.state.filter === "complete" || this.state.filter === "incomplete") {
       for (let i = 0; i < reminderListArray.length; i++) {
-        if (reminderListArray[i].status !== this.state.filter) {
-          reminderListArray.splice(i, 1);
+        if (reminderListArray[i].status === this.state.filter) {
+          reminderListArrayShow.push(reminderListArray[i]);
         }
       }
+      reminderListArray = reminderListArrayShow;
     }
 
     return reminderListArray.map((object, index) => (
