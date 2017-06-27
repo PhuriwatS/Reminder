@@ -1,0 +1,64 @@
+/* ===== All ===== */
+/* ===== Header ===== */
+/* ===== Left Div ===== */
+/* ===== Right Div ===== */
+
+
+
+/* ===== All ===== */
+.content {
+  min-width: 768px;
+  width: 60%;
+  margin: 0 auto;
+}
+.fa {
+  cursor: pointer;
+}
+.fa-1_5x {
+  font-size: 1.5em;
+}
+.dropdown_menu {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+/* ===== Header ===== */
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* ===== Left Div ===== */
+.wrapper-left {
+  display: inline-flex;
+}
+.border {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px 10px;
+  min-height: 60vH;
+}
+.wrapper-left .border {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+/* ===== Right Div ===== */
+.wrapper-right {
+  display: inline-flex;
+}
